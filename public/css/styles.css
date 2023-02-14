@@ -1,5 +1,7 @@
 /* Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+/* Ruda Font */
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@600&display=swap');
 
 body {
     box-sizing: border-box;
@@ -8,6 +10,7 @@ body {
     color: #fff;
     background-color: #431C60;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
     /* overflow-y: scroll; */
 }
 
@@ -197,30 +200,24 @@ main {
     z-index: 10;
 }
 
-.box-img-hotel {
+.card-hotel {
     position: relative;
 }
 
-.img-quarto {
-    width: 40vh;
-}
-
 .footer-box-hotel {
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-    background: rgb(0, 0, 0);
-    padding: 0.8em;
-    margin: 0 0 10em 0;
+    position: absolute;
+    left: 0.1em;
+    right: 0.1em;
+    bottom: 0.5em;
+    padding: 1em;
+    background-color: #212121cc;
 }
 
 .info-hotel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     margin: 0.5em 0 0 0.2em;
-    border-bottom: #232222 2px solid;
     padding-bottom: 2em;
 }
 
@@ -236,6 +233,92 @@ main {
     font-size: 10pt;
 }
 
-.coordenadas-hotel {
-    margin-top: -2em;
+/* Cars Services */
+
+.box-car {
+    position: relative;
+    top: 2rem;
+    background-image: url("../assets/img/carro.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 40vh;
 }
+
+.background-cinza {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a8c;
+    z-index: 999;
+}
+
+/* User Area */ 
+
+.container-user {
+    margin: 2em 0 0 1.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+}
+
+.conteudo-usuario {
+    margin: 0 0 0 0.8em;
+}
+
+.price-user {
+    color: #8BC34A;
+}
+
+.user-img {
+    width: 4vh;
+    height: 4vh;
+    padding: 0.5em;
+    background-color: #FFFF;
+    border-radius: 100%;
+}
+
+/* Viagens de Carro */
+
+.container-viagens {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0 0 1.8em;
+}
+
+.info-viagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 1em;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.conteudo-escrito-info {
+    font-size: 11pt;
+    font-weight: 700;
+    font-family: 'Ruda', sans-serif;
+}
+
+.titulo {
+    font-size: 13pt;
+    font-weight: 800;
+}
+
+.edit-btn {
+    background-color: #7B1FA2;
+    border: none;
+    padding: 0.5em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="146" viewBox="0 0 32 146">
+  <circle id="Elipse_16" data-name="Elipse 16" cx="11" cy="11" r="11" transform="translate(5 5.5)" fill="#7b1fa2"/>
+  <g id="Elipse_17" data-name="Elipse 17" fill="none" stroke="#fff" stroke-width="1">
+    <circle cx="16" cy="16" r="16" stroke="none"/>
+    <circle cx="16" cy="16" r="15.5" fill="none"/>
+  </g>
+  <circle id="Elipse_18" data-name="Elipse 18" cx="11" cy="11" r="11" transform="translate(5 119)" fill="#aab5e0"/>
+  <g id="Elipse_19" data-name="Elipse 19" transform="translate(0 114)" fill="none" stroke="#fff" stroke-width="1">
+    <circle cx="16" cy="16" r="16" stroke="none"/>
+    <circle cx="16" cy="16" r="15.5" fill="none"/>
+  </g>
+  <line id="Linha_4" data-name="Linha 4" y2="82" transform="translate(16 32)" fill="none" stroke="#fff" stroke-width="1"/>
+</svg>
