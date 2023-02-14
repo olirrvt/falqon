@@ -8,14 +8,14 @@ body {
     color: #fff;
     background-color: #431C60;
     font-family: Arial, Helvetica, sans-serif;
+    /* overflow-y: scroll; */
 }
 
 .main-header {
-    height: 100%;
-    width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    height: 100%;
+    width: 100%;
     background-image: url("../assets/img/header.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -25,13 +25,18 @@ body {
     margin: 11em 0 0 0;
 }
 
-
 .text-header {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 20pt;
     text-shadow: 1.5px 1.5px 1.5px #000000;
     margin: 0 0 0.6em 0.5em;
+}
+
+.box-aviao {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
 }
 
 /* Header do Box */
@@ -104,8 +109,8 @@ body {
 
 /* Descrição do Titulo */
 
-.container-text {
-    margin-top: 1em;
+.container-text-principal {
+    margin-top: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -119,11 +124,118 @@ body {
 
 .titulo-desc {
     color: #706F6E;
-    font-weight: 600;
+    font-weight: bolder;
     font-size: 9pt;
+    margin-bottom: 0.7em;
 }
 
 .subtitulo-desc {
     color: #FFFF;
     font-weight: 500;
+}
+
+/* Container do Botão */
+
+.container-text-secundario {
+    display: flex;
+    justify-content: row;
+    justify-content: space-evenly;
+    margin: 2em 0 0 0;
+}
+
+.conteudo-escrito-secundario {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em 0 2.1em;
+}
+
+.btn-view {
+    background-color: #431C60;
+    border: none;
+    padding: 1.4em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 9pt;
+    width: 16em;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36em;
+}
+
+/* Hotel Plans */
+
+.box-text-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.box-text-btn spam {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.box-text-btn button {
+    background-color: #7B1FA2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 33px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-bottom: -1em;
+    z-index: 10;
+}
+
+.box-img-hotel {
+    position: relative;
+}
+
+.img-quarto {
+    width: 40vh;
+}
+
+.footer-box-hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    background: rgb(0, 0, 0);
+    padding: 0.8em;
+    margin: 0 0 10em 0;
+}
+
+.info-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0 0 0.2em;
+    border-bottom: #232222 2px solid;
+    padding-bottom: 2em;
+}
+
+.titulo-hotel {
+    font-weight: 500;
+    font-size: 16pt;
+    border: none;
+}
+
+.days-hotel {
+    background: linear-gradient(90deg, #7B1FA2 86.68%, #4527A0 100%);
+    padding: 0.5em;
+    font-size: 10pt;
+}
+
+.coordenadas-hotel {
+    margin-top: -2em;
 }
