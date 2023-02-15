@@ -10,9 +10,20 @@ body {
     color: #fff;
     background-color: #261136;
     font-family: Arial, Helvetica, sans-serif;
-    height: 170vh;
-    overflow-y: scroll;
+    height: 180vh;
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 180vh;
+    }
+}
+
+.conteudo-principal {
+    margin: auto;
+}
+
+/* Header */
 
 .main-header {
     position: absolute;
@@ -23,15 +34,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 0 0 -2em;
-}
-
-/* Header */
 
 .conteudo-header {
     margin: 11em 0 0 0;
@@ -51,7 +53,7 @@ body {
     gap: 0.5em;
 }
 
-/* Header do Box */
+/* Cabeçalho do Box */
 
 .container-box {
     display: flex;
@@ -86,7 +88,7 @@ body {
     border-top-right-radius: 5px;
 }
 
-/* Main do Box */
+/* Corpo do Box */
 
 
 .box-main {
@@ -179,10 +181,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 36em;
-}
+    margin-top: 40em;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container-text-secundario {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .conteudo-escrito-secundario {
+      margin: 0;
+    }
+  
+    .btn-view {
+      width: auto;
+    }
+  
+    main {
+      margin-top: 38em;
+    }
+  }
 
-/* Hotel Plans */
+/* Estilização do Card do Hotel */
+
+.conteudo-hotel {
+    display: flex;
+    flex-direction: column;
+}
 
 .box-text-btn {
     display: flex;
@@ -191,7 +217,7 @@ main {
     align-items: baseline;
 }
 
-.box-text-btn spam {
+.box-text-btn span {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin: 0 0 0.5em 1.2em;
@@ -202,9 +228,9 @@ main {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 33px;
-    width: 55px;
-    height: 55px;
+    font-size: 2vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
     margin-bottom: -1em;
     z-index: 10;
@@ -212,7 +238,7 @@ main {
 
 .card-hotel {
     position: relative;
-    left: 17px;
+    left: 1vw;
 }
 
 .footer-box-hotel {
@@ -233,52 +259,72 @@ main {
 
 .titulo-hotel {
     font-weight: 500;
-    font-size: 16pt;
+    font-size: 2vw;
     border: none;
 }
 
 .days-hotel {
     background: linear-gradient(90deg, #7B1FA2 86.68%, #4527A0 100%);
     padding: 0.5em;
-    font-size: 10pt;
+    font-size: 1vw;
 }
 
-/* Cars Services */
+@media screen and (max-width: 768px) {
+  .box-text-btn {
+    flex-direction: row;
+    align-items: center;
+  }
+  .box-text-btn button {
+    font-size: 4vw;
+    width: 11vw;
+    height: 11vw;
+  }
+  .card-hotel {
+    left: 0;
+  }
+  .info-hotel {
+    flex-direction: row;
+    align-items: center;
+  }
+  .titulo-hotel {
+    font-size: 4vw;
+  }
+  .days-hotel {
+    font-size: 2vw;
+  }
+}
+
+
+/* Estilização do card de viagens */
 
 .box-car {
     position: relative;
-    top: 2rem;
-    left: 17px;
-    right: 0;
     width: 100%;
+    height: 40vh;
     background-image: url("../assets/img/carro.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 40vh;
 }
 
 .background-cinza {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 26px;
+    bottom: 2%;
     width: 100%;
     background-color: #0a0a0a8c;
     z-index: 999;
 }
 
-/* User Area */ 
-
 .container-user {
     margin: 2em 0 0 1.4em;
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-weight: 600;
 }
 
 .conteudo-usuario {
-    margin: 0 0 0 0.8em;
+    margin-left: 0.8em;
 }
 
 .price-user {
@@ -293,11 +339,10 @@ main {
     border-radius: 100%;
 }
 
-/* Viagens de Carro */
-
 .container-viagens {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
     margin: 1em 0 0 1.8em;
 }
 
@@ -305,7 +350,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 1em;
+    margin-left: 1em;
 }
 
 .container-info {
@@ -335,26 +380,35 @@ main {
     cursor: pointer;
 }
 
-/* Box Liberdade */
+
+/* Estilização do Card da Estátua da Liberdade */
 
 .box-liberdade {
     background-image: url("../assets/img/liberdade.png");
     background-repeat: no-repeat;
     height: 37vh;
-    width: -webkit-fill-available;
+    width: 100%;
     position: relative;
-    top: 4rem;
-    left: 21px;
+    top: 2rem;
 }
 
 .box-date {
-    display: flex;    
+    display: flex;
     flex-direction: column;
     background-color: #000000d4;
     padding: 1em;
-    width: 36.5vh;
+    width: 90%;
     position: absolute;
-    bottom: 1.7em;
+    bottom: 3%;
+    left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .box-date {
+        width: 89%;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 .titulo-date {
@@ -369,14 +423,21 @@ main {
     font-size: 19pt;
 }
 
-/* Box Destiny */
+@media screen and (min-width: 768px) {
+    .box-date {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+
+/* Estilização da área dos inputs */
 
 .box-destiny {
     position: relative;
     top: 5em;
     background: linear-gradient(90deg, #4527A0 86.68%, #7B1FA2 100%);
-    padding: 1em;
-    width: 97%;
+    padding: 2em;
     margin: 0 0 0 0.2em;
 }
 
@@ -402,6 +463,35 @@ main {
 .input-local::placeholder {
     color: #8E8E8E;
 }
+
+@media screen and (min-width: 768px) {
+    .box-destiny {
+        top: 8em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box-form {
+        width: 70%;
+        padding-bottom: 2em;
+        border-bottom: 2px solid #919191;
+    }
+    
+    .form-destiny {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .input-local {
+        width: 100%;
+    }
+    
+    .input-local + .input-local {
+        margin-left: 2%;
+    }
+}
+
 
 /* Icons */
 
@@ -467,3 +557,75 @@ footer {
 .icon-footer {
     width: 2.5vh;
 }
+
+/* Modal */ 
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    color: #000;
+  }
+
+  .modal-card {
+    background: linear-gradient(90deg, #7B1FA2 86.68%, #4527A0 100%);
+      margin: 15% auto;
+      width: 80%; 
+      padding: 25px;
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #FFFF;
+    width: 100%;
+  }
+
+  .modal-content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #FFFF;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 0 0 0;
+    border-bottom: 2px solid #fff;
+  }
+
+  .img-modal {
+    margin: 2em 0 2em 0;
+    width: 35vw;
+  }
+
+  .text-modal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+    color: #FFFF;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
