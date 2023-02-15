@@ -8,10 +8,10 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background-color: #431C60;
+    background-color: #261136;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    /* overflow-y: scroll; */
+    height: 170vh;
+    overflow-y: scroll;
 }
 
 .main-header {
@@ -23,6 +23,15 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 -2em;
+}
+
+/* Header */
 
 .conteudo-header {
     margin: 11em 0 0 0;
@@ -78,6 +87,7 @@ body {
 }
 
 /* Main do Box */
+
 
 .box-main {
     background: rgba(38, 36, 40, 0.95);
@@ -184,7 +194,7 @@ main {
 .box-text-btn spam {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    margin-bottom: 0.5em;
+    margin: 0 0 0.5em 1.2em;
 }
 
 .box-text-btn button {
@@ -202,12 +212,12 @@ main {
 
 .card-hotel {
     position: relative;
+    left: 17px;
 }
 
 .footer-box-hotel {
+    width: 90%;
     position: absolute;
-    left: 0.1em;
-    right: 0.1em;
     bottom: 0.5em;
     padding: 1em;
     background-color: #212121cc;
@@ -238,6 +248,9 @@ main {
 .box-car {
     position: relative;
     top: 2rem;
+    left: 17px;
+    right: 0;
+    width: 100%;
     background-image: url("../assets/img/carro.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -248,8 +261,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 26px;
     width: 100%;
-    height: 100%;
     background-color: #0a0a0a8c;
     z-index: 999;
 }
@@ -298,7 +311,7 @@ main {
 .container-info {
     display: flex;
     flex-direction: row;
-    gap: 4em;
+    gap: 2em;
 }
 
 .conteudo-escrito-info {
@@ -322,3 +335,135 @@ main {
     cursor: pointer;
 }
 
+/* Box Liberdade */
+
+.box-liberdade {
+    background-image: url("../assets/img/liberdade.png");
+    background-repeat: no-repeat;
+    height: 37vh;
+    width: -webkit-fill-available;
+    position: relative;
+    top: 4rem;
+    left: 21px;
+}
+
+.box-date {
+    display: flex;    
+    flex-direction: column;
+    background-color: #000000d4;
+    padding: 1em;
+    width: 36.5vh;
+    position: absolute;
+    bottom: 1.7em;
+}
+
+.titulo-date {
+    margin-bottom: 1.5em;
+    border-bottom: 2px solid #232222;
+    padding-bottom: 1em;
+}
+
+.titulo-date span {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 800;
+    font-size: 19pt;
+}
+
+/* Box Destiny */
+
+.box-destiny {
+    position: relative;
+    top: 5em;
+    background: linear-gradient(90deg, #4527A0 86.68%, #7B1FA2 100%);
+    padding: 1em;
+    width: 97%;
+    margin: 0 0 0 0.2em;
+}
+
+.box-form {
+    padding-bottom: 1em;
+    border-bottom: 2px solid #919191;
+}
+
+.form-destiny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.input-local {
+    width: 90%;
+    border: none;
+    padding: 0.5em;
+    color: #431C60;
+}
+
+.input-local::placeholder {
+    color: #8E8E8E;
+}
+
+/* Icons */
+
+.box-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B9B9B9;
+}
+
+.container-icons:placeholder {
+    color: #FFFF;
+}
+
+.icon-purple {
+    background-color: #7B1FA2;
+}
+
+.icon-ciano {
+    background-color: #AAB5E0;
+}
+
+.icon-blue {
+    background-color: #5371E6;
+}
+
+.icon-gray {
+    background-color: #8B8B8B;
+}
+
+#type-cars {
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 4vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.4em;
+    background-color: #431C60;
+}
+
+.icon-footer {
+    width: 2.5vh;
+}
