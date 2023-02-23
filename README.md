@@ -29,6 +29,15 @@ Isso iniciará o Live Server e abrirá o projeto no seu navegador padrão.
 
 Pronto, agora você pode usar o Live Server.
 
+## Extensões Chrome
+
+Aconselho que utilize a extensão para melhor visualização do projeto em dispositivo móveis: https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk
+
+
+
+![image](https://user-images.githubusercontent.com/100844800/220926466-0b23af5f-8a57-4eec-9f2f-4dca3022efc7.png)
+
+
 ## Agradecimentos
 
 Obrigado por verificar o repositório!
